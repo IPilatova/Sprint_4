@@ -1,13 +1,7 @@
 import pytest
-from main import BooksCollector
 
 # класс TestBooksCollector объединяет набор тестов, которыми мы покрываем наше приложение BooksCollector
 class TestBooksCollector:
-
-    @pytest.fixture(autouse=True)
-    def collector(self):
-        collector = BooksCollector()
-        return collector
 
 # 1. Тесты на метод __init__
 
